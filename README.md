@@ -1,4 +1,4 @@
-# Net-Sum-of-Maximum-Differences
+# Net Sum of Maximum Differences
 Returns the net sum of the maximum differences.
 
     Rules:
@@ -21,3 +21,13 @@ Returns the net sum of the maximum differences.
     If NEW_MIN and NEW_MAX can't be found:
        sum MAX - MIN
     return sum
+
+Ex: list of [10, 7, 5, 9, 8, 11]
+5 and 9 are a pair of differences
+8 and 11 are a pair of differences
+Note: 10 and 7 aren't because the min occurs after
+(9 - 5) + (11 - 8) = 7
+
+Ex: list of [10, 7, 5, 9, 11]
+5 and 11 is the only pair of differences since 9 can not be paired with anything anything else non-intersecting
+(11 - 5) = 6
